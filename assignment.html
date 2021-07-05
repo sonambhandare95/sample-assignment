@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--<link rel="stylesheet" href="project.css">-->
+    </head>
+    <style>
+        *{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-family: sans-serif;
+}
+a{
+    color:grey;
+    text-decoration: none;
+}
+.container .sidenav{
+    height:100vh;
+    width: 150px;
+
+    position: fixed;
+    top:0;
+    left: 0;
+    background: white;
+    box-shadow: 0 10px 20px 0 black;
+}
+
+.container .sidenav ul li :hover{
+    background: rgb(95, 168, 190);
+   display: block;
+}
+ .sidenav a.active :hover{
+    background: turquoise;
+}
+.container ul li{
+    padding: 20px;
+    list-style: none;
+    height: 100px;
+    width:150px;
+    margin: 0px;
+    padding: 0;
+  
+    
+   /* margin-left: 20px;*/
+  
+    /*border-bottom: 1px solid black;*/
+}
+/*.sidenav  .logo{
+    height: 100px;
+    width:150px;
+    border-bottom: 2px solid grey;
+    
+}*/
+
+
+/*.container .sidenav a i{
+    position: relative;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}*/
+li a{
+    display: block;
+    color: grey;
+    width: 150px;
+    height: 100px;
+   text-align: center;
+ padding-top: 20px;
+
+}
+/*li a:hover{
+    color:rgb(188, 233, 243);
+    display: block;
+}*/
+img{
+    width:80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    height: 80px;
+    
+}
+.logo{
+    padding-top: 25px;
+    border-bottom: 2px solid #f0eeee;
+    text-align: center;
+}
+
+.container .main-section{
+    margin-left: 150px;
+   /* border: 1px solid green;*/
+    width:auto;
+    height:15vh;
+}
+.container .data-section{
+    margin-left: 150px;
+  
+    /*border: 1px solid green;*/
+    width:auto;
+    height: 80vh;
+    background: #e3e3ea;
+   
+   
+}
+.videoTiltle {
+    margin: 30px;
+    color:rgb(134, 131, 131);
+    font-size: 20px;
+    font-weight: 100px;
+}
+.videoTiltle i{
+ 
+    margin-right: 1%;
+    margin-top: 2%;
+}
+ .URLbox{
+    width: 500px;
+padding: 10px;
+box-sizing: border-box;
+border-radius: 10px;
+margin-left: 30%;
+margin-top: 5%;
+/*border: 1px solid rgb(82, 80, 80);*/
+background: white;
+
+}
+input {
+    background: none;
+    border: none;
+    color: black;
+    width:400px;
+    font-size: 10px;
+}
+
+ .uploadPhoto{
+    height: 150px;
+    width: 150px;
+    box-sizing: border-box;
+    margin: auto;
+   /* border: 1px solid black;*/
+    position:absolute;
+    left: 38%;
+   top:50%;
+   background: white;
+   
+}
+.uploadPhoto h5{
+   margin: 0;
+   padding: 0;
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+
+}
+.container .data-section .orText{
+    margin: auto;
+  
+    position:absolute;
+    right: 40%;
+   top:50%;
+}
+    </style>
+    <body>
+        <div class="container">
+           
+            <div class="sidenav">
+                <div class="logo">
+                   <a href=""><img src="newlogo.png" alt="logo"></a> 
+                </div>
+                <ul>
+                   
+                <li><a href="#"><i class="fa fa-user"></i><br>Students</a></li>
+                   
+                    <li><a href="#" class="active"><i class="fa fa-book"></i><br>Lesson Plan</a></li>
+                    <li><a href="#"><i class="fa fa-cog"></i><br>Settings</a></li>
+                </ul>
+            </div>
+            <div class="main-section">
+                
+               
+            </div>
+            <div class="data-section">
+                <div class="videoTiltle">
+                    <i class="fa fa-play fa-rotate-180"></i><label>Videos</label>
+                </div>
+                
+                <div class="URLbox">
+                    <input type="search" placeholder="Insert URL here">
+                </div>
+
+                <div class="uploadPhoto">
+                        <h5>Upload</h5>
+                </div>
+               <div class="orText">
+                   <h5>or</h5>
+               </div>
+            </div>
+        </div>
+    </body>
+</html>
